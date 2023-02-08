@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/estilo.css">
+	<title>Agencia de empleo</title>
+</head>
+<body>
+	<form action="/action_page.php" method="GET" target="_blank">
+		<fieldset>
+
+			<legend>¿Quien eres?</legend>
+
+			<label>Nombre: <input type="texto" name="nombre" placeholder=" Nombre"></label>
+
+			<label>Apellidos: <input type="texto" name="apellidos" placeholder=" Apellidos"></label>
+
+			<label>Correo Electrónico: <input type="email" name="email" placeholder=" Email"></label>
+
+			<label>Población: <input type="texto" name="población" placeholder=" Población"></label>
+
+			<label>Provincia: <input type="texto" name="provincia" placeholder=" Provincia"></label>
+
+			<label>Edad:</label>
+			<label><input type="radio" name="edad" value="0-20"> 0-20</label>
+			<label><input type="radio" name="edad" value="20-40"> 20-40</label>
+			<label><input type="radio" name="edad" value="40-60"> 40-60</label>
+			<label><input type="radio" name="edad" value="60-100"> 60-100</label>
+
+			<div class="check">
+				<label>¿Como nos conociste?</label>
+				<label><input type="checkbox" name="edad"> A través de un amigo</label>
+				<label><input type="checkbox" name="edad"> A través de un buscador</label>
+				<label><input type="checkbox" name="edad"> Navegando por la red</label>
+				<label><input type="checkbox" name="edad"> Otros</label>
+			</div>
+
+		</fieldset>
+		
+		<fieldset>
+
+			<legend>Otros Datos</legend>
+
+			<label>Opinión sobre nuestra web</label>
+			<textarea placeholder="Escriba aquí su opinión..."></textarea>
+
+			<label>¿Tiene alguna sugerencia?</label>
+			<textarea placeholder="Escriba aquí sus sugerencias..."></textarea>
+
+			<label>¿Cúanto navegas por internet? (Señala la opción que más se acerque)<label>
+			<select name="cars" size="3" multiple>
+	  			<option value="4">4 horas al día</option>
+	  			<option value="2">2 horas al día</option>
+	  			<option value="1">1 horas al día</option>
+	  			<option value="6">6 horas al día</option>
+			</select>
+			<div class="buttons">
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Borrar Formulario">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

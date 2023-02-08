@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mail>
+    <destinatario>
+        <nombre>Rosanna Palmucci Bonini</nombre>
+        <mail>palmucci202@gmail.com</mail>
+    </destinatario>
+    <remitente>
+        <nombre>Chantal De Almeida Palmucci</nombre>
+        <mail>chda2022@gmail.com</mail>
+    </remitente>
+    <asunto motivo = "Devolución del pedido 204507"/>
+    <texto>
+        <parrafo>
+            Buenas tardes Rosanna, 
+            Me gustaría saber cuales son las indicaciones para realizar la devolución de mi pedido.
+            Por favor espero su respuesta con la mayor brevedad posible.
+            Un saludo, Chantal De Almeida.
+        </parrafo>
+    </texto>
+</mail>

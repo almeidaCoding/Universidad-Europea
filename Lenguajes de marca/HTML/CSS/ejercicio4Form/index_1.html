@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilo.css" media="all">
+    <title>Formularios</title>
+</head>
+<body>
+    <section class="container">
+        <div class="glass-container">
+           <form action="/action_page.php" method="GET" target="_blank">
+
+            <h1>Contácta con nosotros</h1>
+            <div>
+                <label>Nombre:</label>
+                <input type="texto" name="nombre" placeholder="Nombre" required>
+            </div>
+
+            <div>   
+                <label>Apellidos:</label>
+                <input type="texto" name="apellidos" placeholder="Apellidos" required>
+            </div>
+            
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div>   
+                <label>Edad:</label>
+                <input type="date" name="birthday">
+            </div>
+
+            <div>
+                <label>Como nos conociste?</label>
+                <input list="browsers" placeholder="Escoge una opción">
+                <datalist id="browsers">
+                    <option value="Facebook">
+                    <option value="Instagram">
+                    <option value="Twitter">
+                    <option value="TikTok">
+                </datalist>            
+            </div>
+            <div>
+                <label class="diferent">Tú opinión cuenta, escríbenos</label>
+                <textarea name="message" placeholder="Escriba aquí sus sugerencias..."></textarea>
+            </div>
+            <div class="button-submit">
+                <input type="submit" value="Información">
+            </div>
+           </form>
+        </div>
+    </section>
+</body>
+</html>

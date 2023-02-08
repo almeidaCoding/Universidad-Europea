@@ -1,0 +1,29 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'helvetica', sans-serif;
+	font-size: 16px;
+}
+p{
+	color: #555;
+	margin:30px;
+}
+#primero p{
+	color: #336699;
+}
+a{
+	color: #CC3300;
+}
+#primero em{
+	background: #FFFFCC;
+	padding: .16px;
+
+}
+em.especial{
+	background: #FFCC99;
+	border: 1px solid red;
+	padding: .16px;
+}

@@ -1,0 +1,99 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	background-color: #4CB963;
+}
+.cuatro-html{
+	background-color: blue;
+}
+.cinco-html{
+	background-color: #383961;
+}
+.dos-html{
+	background-color: #FCFC62;
+}
+.tres-html{
+	background-color: #157F1F;
+}
+.page-one h1{
+	font-weight: 700;
+	font-size: 18px;
+	color: #33FFFF;
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+h1{
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+span{
+	color: #A40606;
+}
+p{
+	margin: 20px;
+}
+li{
+	margin: 0px 0px 0px 35px;
+}
+ol li{
+	color:#A40606;
+}
+table{
+	display: flex;
+	justify-content: center;
+	margin: 100px 0 100px 0;
+}
+td img{
+	height: 50px;
+	cursor: pointer;
+}
+div img{
+	width:100px;
+	height: 100px;
+}
+.tarjetaElectronica{
+	display: flex;
+	justify-content: center;
+}
+.tarjetaElectronica img{
+	width:400px;
+	height: 150px;
+	margin: 20px 0px 40px 0px;
+}
+.pantallaOled{
+	display: flex;
+	justify-content: center;
+}
+.pantallaOled img{
+	width:400px;
+	height: 150px;
+	margin: 20px 0px 40px 0px;
+}
+.screenLen{
+	display: flex;
+	justify-content: center;
+}
+.screenLen img{
+	width:400px;
+	height: 400px;
+	margin: 20px 0px 40px 0px;
+}
+.batPanasonic{
+	display: flex;
+	justify-content: center;
+}
+.batPanasonic img{
+	width:400px;
+	height: 250px;
+	margin: 20px 0px 40px 0px;
+}
+.flechaAtras{
+	margin: 0px 0px 20px 20px;
+}

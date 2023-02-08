@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE biblioteca > 
+<biblioteca> 
+<ejemplar tipo_ejem="libro" titulo="Lenguaje de marcas: XML"
+editorial="McGraw-Hill"> 
+<tipo> <libro isbn="978-2-7360-4965-1" edicion="1" paginas="270"></libro> </tipo> 
+<autor nombre="Nombre autor"></autor> 
+<autor nombre="Nombre Apellido1 Apellido2" funcion="traductor"></autor> 
+<prestado lector="Fulanito"> 
+<fecha_pres dia="1" mes="ene" año="2021"></fecha_pres> 
+<fecha_devol dia="31" mes="ene" año="2021"></fecha_devol> 
+</prestado> 
+</ejemplar> 
+</biblioteca>

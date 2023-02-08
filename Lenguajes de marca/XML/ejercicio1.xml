@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+    <destinatario>
+        <nombre>Raul</nombre>
+        <apellidos>Paiva Pinho</apellidos>
+        <identificacion>DNI/NIE: Y6758271B</identificacion>
+        <movil>Teléfono móvil: 603290902</movil>
+    </destinatario>
+    <articulo>
+        <nombre>Nintendo Switch</nombre>
+        <numero-del-pedido>293463002882</numero-del-pedido>
+    </articulo>
+    <direccion>
+        <calle>Calle Marqués de Santa Ana</calle>
+        <portal>28</portal>
+        <telefonillo>Bajo izquierda</telefonillo>
+        <codigo-postal>28004</codigo-postal>
+        <localidad>Madrid</localidad>
+        <fecha-de-entrega>20/12/2022</fecha-de-entrega>
+    </direccion>
+</pedido>
