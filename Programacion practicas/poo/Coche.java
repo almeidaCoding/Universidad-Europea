@@ -4,7 +4,10 @@ public class Coche {
     private int pesoPlataforma; // Propiedades iniciales que tendrán en común los objetos
     private int largo; // Propiedades iniciales que tendrán en común los objetos
     private int ancho; // Propiedades iniciales que tendrán en común los objetos
-    private int motor; // Propiedades iniciales que tendrán en común los objetos
+    
+    //Hasta la variable ''motor'' son las propiedades comunes del objeto
+    //A partir de la variable ''color'' comienzas las propiedades que van a variar en función del coche
+
     private String color; // Propiedades que varian dependiendo del tipo de coche, estas propiedades ya no son en común
     private int pesoTotal; // Propiedades que varian dependiendo del tipo de coche, estas propiedades ya no son en común
     private boolean asientosCuero, climatizador; // Propiedades que varian dependiendo del tipo de coche, estas propiedades ya no son en común
@@ -14,7 +17,6 @@ public class Coche {
         ruedas = 4; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
         largo = 2000; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
         ancho = 300; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
-        motor = 1600; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
         pesoPlataforma = 500; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
     }
 
@@ -35,7 +37,7 @@ public class Coche {
 
     // Método Setter Asientos
     public void configuraAsientos(String asientosCuero){
-        if(asientosCuero == "si"){
+        if(asientosCuero.equalsIgnoreCase("si")){
             this.asientosCuero = true;
         }else{
             this.asientosCuero = false;
@@ -53,7 +55,7 @@ public class Coche {
 
     // Método Setter Climatizador
     public void configuraClimatizador(String climatizador){
-        if (climatizador == "si"){
+        if (climatizador.equalsIgnoreCase("si")){
             this.climatizador = true;
         }else{
             this.climatizador = false;
@@ -69,5 +71,29 @@ public class Coche {
         }
     }
 
-    
+    //Método setter y getter a la vez (no es recomendado hacer esto)
+    public String pesoCoche(){
+        int persoCarroceria = 500;
+        pesoTotal = pesoPlataforma + persoCarroceria;
+
+        if(asientosCuero == true){
+            pesoTotal = pesoTotal + 50;
+        }
+        if(climatizador == true){
+            pesoTotal = pesoTotal + 20;
+        }
+        return "El peso del coche es " + pesoTotal;
+    }
+
+    //Método getter
+    public int precioCoche(){
+        int valorFinal = 10000;
+        if (asientosCuero == true){
+            valorFinal += 2000;
+        }
+        if(climatizador == true){
+            valorFinal += 1500;
+        }
+        return valorFinal;
+    }    
 }
