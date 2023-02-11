@@ -30,7 +30,7 @@ public class Coche {
 
     // Método Getter para mostrar el color del coche
     public String dimeColor(){
-        return "El color del coche es: " + color;
+        return "El color del coche es " + color;
     }
 
     // Método Setter Asientos
