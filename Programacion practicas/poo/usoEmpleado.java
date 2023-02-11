@@ -18,13 +18,6 @@ public class usoEmpleado {
         // JOptionPane.showMessageDialog(null, "Nombre: " + empleado2.dameNombre() + " Sueldo: " + empleado2.dimeSueldo() + " Fecha de alta: " + empleado2.fechAlta());
         // JOptionPane.showMessageDialog(null, "Nombre: " + empleado3.dameNombre() + " Sueldo: " + empleado3.dimeSueldo() + " Fecha de alta: " + empleado3.fechAlta());
 
-
-        Empleado [] misEmpleados = new Empleado[3];
-        
-        misEmpleados[0] = new Empleado("Beatriz Guillermo", 30000, 2020, 03, 20);
-        misEmpleados[1] = new Empleado("Rosanna Palmucci", 30000, 2010, 07, 15);
-        misEmpleados[2] = new Empleado("Mirella", 40000, 2005, 10, 05);
-
         // for(int i = 0; i < misEmpleados.length; i++){
         //     misEmpleados[i].aumentaSueldo(15);
         // }
@@ -32,7 +25,14 @@ public class usoEmpleado {
         // for(int i = 0; i < misEmpleados.length; i++){
         //     JOptionPane.showMessageDialog(null, "Nombre: " + misEmpleados[i].dameNombre() + " Sueldo: " + misEmpleados[i].dimeSueldo() + " Fecha de alta: " + misEmpleados[i].fechAlta());
         // }
+
+
+        Empleado [] misEmpleados = new Empleado[3];
         
+        misEmpleados[0] = new Empleado("Beatriz Guillermo", 30000, 2020, 03, 20);
+        misEmpleados[1] = new Empleado("Rosanna Palmucci", 30000, 2010, 07, 15);
+        misEmpleados[2] = new Empleado("Mirella", 40000, 2005, 10, 05);
+
         for(Empleado e: misEmpleados){
             e.aumentaSueldo(15);
         }
