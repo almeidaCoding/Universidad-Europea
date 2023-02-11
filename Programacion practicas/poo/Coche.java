@@ -46,7 +46,7 @@ public class Coche {
 
     // Método Getter Asientos
     public String dimeAsientos(){
-        if(asientosCuero == true){
+        if(asientosCuero){
             return "El coche tiene asientos de cuero";
         }else{
             return "El coche no tiene asientos de cuero";
@@ -64,7 +64,7 @@ public class Coche {
 
     // Método Getter Climatizador
     public String dimeClimatizador(){
-        if (climatizador == true){
+        if (climatizador){
             return "El coche incorpora climatizador";
         }else{
             return "El coche lleva aire acondicionado pero no climatizador";
@@ -76,10 +76,10 @@ public class Coche {
         int persoCarroceria = 500;
         pesoTotal = pesoPlataforma + persoCarroceria;
 
-        if(asientosCuero == true){
+        if(asientosCuero){
             pesoTotal = pesoTotal + 50;
         }
-        if(climatizador == true){
+        if(climatizador){
             pesoTotal = pesoTotal + 20;
         }
         return "El peso del coche es " + pesoTotal;
@@ -88,10 +88,10 @@ public class Coche {
     //Método getter
     public int precioCoche(){
         int valorFinal = 10000;
-        if (asientosCuero == true){
+        if (asientosCuero){
             valorFinal += 2000;
         }
-        if(climatizador == true){
+        if(climatizador){
             valorFinal += 1500;
         }
         return valorFinal;
