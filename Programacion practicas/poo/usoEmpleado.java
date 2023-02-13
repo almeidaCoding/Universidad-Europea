@@ -37,7 +37,7 @@ public class usoEmpleado {
             e.aumentaSueldo(15);
         }
         for(Empleado e: misEmpleados){
-            JOptionPane.showMessageDialog(null, "Nombre: " + e.dameNombre() + " Sueldo: " + e.dimeSueldo() + " Fecha de alta: " + e.fechAlta());
+            JOptionPane.showMessageDialog(null, "Nombre: \n" + e.dameNombre() + "\nSueldo: \n" + e.dimeSueldo() + "\nFecha de alta: \n" + e.fechAlta());
         }
 
     }
