@@ -1,0 +1,59 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilo.css" media="all">
+
+    <title>Formularios</title>
+</head>
+<body>
+    <section class="container">
+        <div class="glass-container">
+           <form action="/action_page.php" method="GET" target="_blank">
+
+            <h1>Contácta con nosotros</h1>
+            <div>
+                <label>Nombre:</label>
+                <input type="texto" name="nombre" placeholder="Nombre" class="datosRequeridos">
+            </div>
+
+            <div>   
+                <label>Apellidos:</label>
+                <input type="texto" name="apellidos" placeholder="Apellidos" class="datosRequeridos">
+            </div>
+            
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Email" pattern=".*@.*" class="datosRequeridos">
+            </div>
+
+            <div>   
+                <label>Password:</label>
+                <!-- required minlength="6" pattern=".{6,}" title="La contraseña debe tener al menos 6 caracteres"
+                Esto se puede utilziar en los inputs-->
+                <input type="password" name="Password">
+            </div>
+
+            <div class="diferent">
+                <label >Comentários</label>
+                <textarea name="message" placeholder="Escriba aquí sus sugerencias..."></textarea>
+            </div>
+
+            <div class="diferent-two">
+                <input type="checkbox" name="Términos y condiciones"> 
+                <label>Acepto las condiciones del servicio</label> 
+            </div>
+
+            <div class="button-submit">
+                <input type="submit" value="Enviar" onclick="comprobacion()">
+            </div>
+
+           </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
