@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/estilo.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
 
     <title>Formularios</title>
 </head>
 <body>
     <section class="container">
         <div class="glass-container">
-           <form action="/action_page.php" method="GET" target="_blank">
+
+            <!-- onsubmit="return contenedorFunctions()" también sirve como envio del formulario y se debe colocar dentro del form-->
+           <form action="/action_page.php" method="GET"
+            target="_blank">
 
             <h1>Contácta con nosotros</h1>
             <div>
@@ -30,23 +34,23 @@
 
             <div>   
                 <label>Password:</label>
-                <!-- required minlength="6" pattern=".{6,}" title="La contraseña debe tener al menos 6 caracteres"
-                Esto se puede utilziar en los inputs-->
-                <input type="password" name="Password">
+                
+                <input type="password" name="Password" id="pass" class="datosRequeridos">
             </div>
 
             <div class="diferent">
                 <label >Comentários</label>
-                <textarea name="message" placeholder="Escriba aquí sus sugerencias..."></textarea>
+                <textarea name="message" placeholder="Comentários" rows="5" cols="20" class="datosRequeridos" id="comentUser"></textarea>
+                <div id="contador"></div>
             </div>
 
             <div class="diferent-two">
-                <input type="checkbox" name="Términos y condiciones"> 
+                <input type="checkbox" name="Términos y condiciones"  id="termsconditions" class="datosRequeridos"> 
                 <label>Acepto las condiciones del servicio</label> 
             </div>
 
             <div class="button-submit">
-                <input type="submit" value="Enviar" onclick="comprobacion()">
+                <input type="submit" value="Enviar" onclick="contenedorFunctions()">
             </div>
 
            </form>
@@ -54,6 +58,6 @@
     </section>
 
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
