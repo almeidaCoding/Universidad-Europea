@@ -1,6 +1,6 @@
 package poo;
 
-public class empleados {
+public class empleadosOne {
     public static void main(String[] args) {
         personasEmpleo trabajador1 = new personasEmpleo("Susana");
         personasEmpleo trabajador2 = new personasEmpleo("Beatriz");
