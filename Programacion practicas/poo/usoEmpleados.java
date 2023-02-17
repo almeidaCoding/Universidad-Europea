@@ -1,7 +1,7 @@
 package poo;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import javax.swing.*;
+// import javax.swing.*;
 
 public class usoEmpleados {
     public static void main(String[] args) {

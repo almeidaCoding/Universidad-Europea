@@ -1,7 +1,7 @@
 /* Crear una función de forma recursiva que cuente los dígitos que tiene un número entero que se pide al usuario por teclado */
 
 import java.util.Scanner;
-public class Digitos {
+public class digitos_1{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;
