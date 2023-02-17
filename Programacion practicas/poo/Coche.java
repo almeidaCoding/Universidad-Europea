@@ -4,7 +4,8 @@ public class Coche {
     private int pesoPlataforma; // Propiedades iniciales que tendrán en común los objetos
     private int largo; // Propiedades iniciales que tendrán en común los objetos
     private int ancho; // Propiedades iniciales que tendrán en común los objetos
-    
+    // private int motor;
+
     //Hasta la variable ''motor'' son las propiedades comunes del objeto
     //A partir de la variable ''color'' comienzas las propiedades que van a variar en función del coche
 
@@ -18,6 +19,7 @@ public class Coche {
         largo = 2000; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
         ancho = 300; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
         pesoPlataforma = 500; // Propiedades iniciales que tendrán en común los objetos con su valor inicial
+        // motor = 1600;
     }
 
     // Método Getter Datos Generales del coche

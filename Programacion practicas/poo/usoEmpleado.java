@@ -27,11 +27,12 @@ public class usoEmpleado {
         // }
 
 
-        Empleado [] misEmpleados = new Empleado[3];
+        Empleado [] misEmpleados = new Empleado[4];
         
         misEmpleados[0] = new Empleado("Beatriz Guillermo", 30000, 2020, 03, 20);
         misEmpleados[1] = new Empleado("Rosanna Palmucci", 30000, 2010, 07, 15);
-        misEmpleados[2] = new Empleado("Mirella", 40000, 2005, 10, 05);
+        misEmpleados[2] = new Empleado("Mirella", 40000, 2005, 10, 05); // llama al constrcutor que tiene 5 parámetros.
+        misEmpleados[3] = new Empleado("Luciano"); // llama al constrcutor que tiene 2 parámetros.
 
         for(Empleado e: misEmpleados){
             e.aumentaSueldo(15);
@@ -43,7 +44,7 @@ public class usoEmpleado {
     }
 }
 
- //class Empleado sin el modificador de acceso ''public'' -> no se debe colocar ya que vamos a crea todas las clases en un mismo fichero.
+//class Empleado sin el modificador de acceso ''public'' -> no se debe colocar ya que vamos a crea todas las clases en un mismo fichero.
 class Empleado{
 
     private String nombre;
@@ -56,6 +57,11 @@ class Empleado{
         sueldo = sue;
         GregorianCalendar calendario = new GregorianCalendar(agno, mes-1, dia);
         altaContrato = calendario.getTime();
+    }
+
+    //Segundo constrcutor
+    public Empleado(String nom){
+        this(nom, 30000, 2000, 01, 02); // llamada al constructor de 5 parámetros.
     }
 
     //Método getter
