@@ -38,7 +38,10 @@ public class usoEmpleados {
         misEmpleados[2] = new Empleado("Mirella", 40000, 2005, 10, 05); // llama al constrcutor que tiene 5 parámetros.
         misEmpleados[3] = new Empleado("Luciano"); // llama al constrcutor que tiene 2 parámetros.
         misEmpleados[4] = jefeAdministracion; //Polimorfismo
-        misEmpleados[5] = new Jefatura("Maria", 80000, 2000, 9, 20);
+        misEmpleados[5] = new Jefatura("Maria", 95000, 2000, 9, 20); //Polimorfismo
+
+        Jefatura jefaFinanzas = (Jefatura) misEmpleados[5]; //conversion de objetos con casting
+        jefaFinanzas.setEstableceIncentivo(55000);
 
         for(Empleado e: misEmpleados){
             e.aumentaSueldo(5);
@@ -91,15 +94,15 @@ class Empleado{
 }
 
 //Clase que hereda de empleado
-class Jefatura extends Empleado{
+    class Jefatura extends Empleado{
 
     private double incentivo;
 
     //Constructor con parámetros
     public Jefatura(String nom, double sue, int agno, int mes, int dia){
-        super(nom, sue, agno, mes, dia);
+        super(nom, sue, agno, mes, dia); //llamando al padre y al constructor del padre
     }
-
+    
     //Método setter
     public void setEstableceIncentivo(double b){
         incentivo = b;
