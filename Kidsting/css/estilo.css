@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+	height: auto;
+	background-color: #222831;
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	display: flex;
+	justify-content: flex-end;
+	margin: 30px 20px 0px 0px;
+}
+.iSesion{
+	height: 50px;
+	width: 150px;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding: 8px 24px 8px 24px;
+	background-color: #B194F5;
+	color: #222831;
+	border:none;
+	cursor: pointer;
+}
+.iSesion:hover{
+	color: #EEEEEE;
+	background-color: #582CCC;
+	transition: 1s ease;
+}
+.registro{
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	padding: 8px 24px 8px 24px;
+	border: 1.5px solid #B194F5;
+	color: #EEEEEE;
+	background-color: transparent;
+	cursor: pointer;
+}
+.registro:hover{
+	border-color: #582CCC;
+	transition: 1s ease;
+}
+.bienvenidaAstro{
+	display: flex;
+	flex-direction: row;
+}
+.colum{
+	width: 500px;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+img{
+	margin-bottom: -30px;
+	height: 600px;
+	width: 600px;
+}
+.colum h1{
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 96px;
+	text-align: center;
+	color: #EEEEEE;
+}
+.colum h3{
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: center;
+	color: #EEEEEE;
+}
+.final-page{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 180px;
+	width: 1200px;
+	margin-left: 30px;
+	background: linear-gradient(180deg, rgba(238, 238, 238, 0.4) 0%, rgba(238, 238, 238, 0.1) 100%);
+	box-shadow: 0px 4px 24px rgba(238, 238, 238, 0.25);
+	backdrop-filter: blur(22.5px);
+	border-radius: 70px 70px 0px 0px;
+}
+footer img{
+	height: 100px;
+	width: 100px;
+	margin-bottom: 15px;
+}
+p{
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	color: #EEEEEE;
+}
+.one-parrafo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.two-parrafo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.tree-parrafo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
