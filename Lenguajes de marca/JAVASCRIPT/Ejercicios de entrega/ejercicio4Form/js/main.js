@@ -22,7 +22,7 @@ function comprobacion(){
 	
 	
 
-	if(datosPersonales !== "" && password !== "" && parseInt(password) === parseInt(passValid) &&passLong >= 6){
+	if(datosPersonales !== "" && password !== "" && parseInt(password) === parseInt(passValid) && passLong >= 6){
 
 			if(checkbox.checked){
 				Swal.fire({
@@ -63,7 +63,7 @@ function charTextArea(){
 	if(longitud > 50){
 		Swal.fire({
 		  title: '¡Cuidado!',
-		  text: "Has ultrapasado los caracteres 		disponibles en la caja de 			comentários",
+		  text: "Has ultrapasado los caracteres disponibles en la caja de 	 comentários",
 		  icon: 'warning',
 		  confirmButtonColor: '#3085d6',
 		  cancelButtonColor: '#d33',
