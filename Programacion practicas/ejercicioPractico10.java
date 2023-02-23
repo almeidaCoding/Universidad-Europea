@@ -12,5 +12,7 @@ public class ejercicioPractico10 {
 
         int resultado = horasTrabajadas * diasTrabajadosPorSemana * horasEnEuros;
         System.out.println("Tu salario semanal es: " + resultado);
+
+        sc.close();
     }
 }
