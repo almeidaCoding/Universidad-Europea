@@ -31,4 +31,7 @@ public class ejercicioPractico9 {
         return num1 - num2;
 
     }
+    
 }
+
+
