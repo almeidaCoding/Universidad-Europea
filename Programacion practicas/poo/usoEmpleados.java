@@ -1,4 +1,5 @@
 package poo;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
 // import javax.swing.*;
@@ -46,6 +47,9 @@ public class usoEmpleados {
         for(Empleado e: misEmpleados){
             e.aumentaSueldo(5);
         }
+
+        Arrays.sort(misEmpleados);
+
         for(Empleado e: misEmpleados){
             System.out.println("Nombre: \n" + e.dameNombre() + "\nSueldo: \n" + e.dimeSueldo() + "\nFecha de alta: \n" + e.fechAlta() + "\n");
         }
@@ -54,7 +58,7 @@ public class usoEmpleados {
 }
 
 //class Empleado sin el modificador de acceso ''public'' -> no se debe colocar ya que vamos a crea todas las clases en un mismo fichero.
-class Empleado{
+class Empleado implements Comparable{
 
     private String nombre;
     private double sueldo;
@@ -90,6 +94,20 @@ class Empleado{
     public void aumentaSueldo(double porcentaje){
         double aumento = sueldo * porcentaje / 100;
         sueldo += aumento;
+    }
+
+    //Método CompareTo para ordenar Arrays con 'Sort' interfaz predefinida de la API de Java
+    public int compareTo(Object miObjecto){
+        Empleado otroEmpleado = (Empleado) miObjecto;
+        if(this.sueldo<otroEmpleado.sueldo){
+            return -1;
+        }
+
+        if(this.sueldo>otroEmpleado.sueldo){
+            return 1;
+        }
+        
+        return 0;
     }
 }
 
