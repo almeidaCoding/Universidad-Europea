@@ -44,6 +44,19 @@ public class usoEmpleados {
         Jefatura jefaFinanzas = (Jefatura) misEmpleados[5]; //conversion de objetos con casting
         jefaFinanzas.setEstableceIncentivo(55000);
 
+        System.out.println(jefaFinanzas.tomarDecisiones("Dar más días de vacaciones a los empleados\n"));
+
+        // Empleado directorComercial = new Jefatura("Joana", 23000, 2019, 2, 2); //principio de sustitución 'directorComercial' es de tipo Jefatura que a su vez es un Empleado
+
+        // Comparable ejemplo = new Empleado("Pedro", 18000, 2011, 4, 4); //instancia de interfaz de tipo empleado (principio de sustitución)
+
+        // if(directorComercial instanceof Empleado){
+        //     System.out.println("Es de tipo Jefatura");
+        // }
+        // if(ejemplo instanceof Comparable){
+        //     System.out.println("Implementa la interfaz comparable\n");
+        // }
+
         for(Empleado e: misEmpleados){
             e.aumentaSueldo(5);
         }
@@ -112,7 +125,7 @@ class Empleado implements Comparable{
 }
 
 //Clase que hereda de empleado
-    class Jefatura extends Empleado{
+    class Jefatura extends Empleado implements jefes{
 
     private double incentivo;
 
@@ -121,6 +134,10 @@ class Empleado implements Comparable{
         super(nom, sue, agno, mes, dia); //llamando al padre y al constructor del padre
     }
     
+    public String tomarDecisiones(String decision){
+        return "Un miembro de la dirección ha tomado la decisión de: " + decision;
+    }
+
     //Método setter
     public void setEstableceIncentivo(double b){
         incentivo = b;
@@ -132,4 +149,5 @@ class Empleado implements Comparable{
         return sueldoJefe + incentivo;
     }
 
+    
 }
