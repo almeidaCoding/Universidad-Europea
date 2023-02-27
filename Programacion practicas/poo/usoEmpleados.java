@@ -18,15 +18,6 @@ public class usoEmpleados {
         // JOptionPane.showMessageDialog(null, "Nombre: " + empleado1.dameNombre() + " Sueldo: " + empleado1.dimeSueldo() + " Fecha de alta: " + empleado1.fechAlta());
         // JOptionPane.showMessageDialog(null, "Nombre: " + empleado2.dameNombre() + " Sueldo: " + empleado2.dimeSueldo() + " Fecha de alta: " + empleado2.fechAlta());
         // JOptionPane.showMessageDialog(null, "Nombre: " + empleado3.dameNombre() + " Sueldo: " + empleado3.dimeSueldo() + " Fecha de alta: " + empleado3.fechAlta());
-
-        // for(int i = 0; i < misEmpleados.length; i++){
-        //     misEmpleados[i].aumentaSueldo(15);
-        // }
-
-        // for(int i = 0; i < misEmpleados.length; i++){
-        //     JOptionPane.showMessageDialog(null, "Nombre: " + misEmpleados[i].dameNombre() + " Sueldo: " + misEmpleados[i].dimeSueldo() + " Fecha de alta: " + misEmpleados[i].fechAlta());
-        // }
-
         
         Jefatura jefeAdministracion = new Jefatura("Luan", 55000, 2002, 5, 20);
         jefeAdministracion.setEstableceIncentivo(2570);
@@ -144,6 +135,10 @@ class Empleado implements Comparable{
     }
     
     //Método getter
+    //la anotación @override antes de la 
+    // declaración del método en la subclase, para informar al compilador o a cualquier otra herramienta (o 
+    // a quien sea que lea el código posteriormente) de que estamos ante una sobreescritura
+    @Override
     public double dimeSueldo(){ // este método sobrescribe al de la clase padre.
         double sueldoJefe = super.dimeSueldo();
         return sueldoJefe + incentivo;
