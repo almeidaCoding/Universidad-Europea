@@ -113,3 +113,52 @@ p{
 	flex-direction: row;
 	align-items: center;
 }
+@media only screen and (max-width:900px){
+
+	/* Footer en tablet y mobile desaparece */
+
+	.final-page{
+		display: none;
+	}
+	h3{
+		display: none;
+	}
+
+	/* Comienzo de las modificaciones */
+
+	.principalSect{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.bienvenidaAstro{
+		flex-direction: column-reverse;
+		margin: 115px;
+	}
+	.colum h1{
+		font-size: 40px;
+		margin-right: 70px;
+	}
+	header{
+		flex-direction: column;
+		margin-left: 40px;
+	}
+	.iSesion{
+		margin-bottom: 10px;
+		width: 380px;
+		height: 68px;
+	}
+	.registro{
+		width: 380px;
+		height: 68px;
+	}
+}
+
+@media only screen and (max-width:480px){
+	.principalSect{
+		width: 150%;
+		height: 100%;
+	}
+
+}
