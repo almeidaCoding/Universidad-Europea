@@ -37,6 +37,10 @@ public class usoEmpleados {
 
         System.out.println(jefaFinanzas.tomarDecisiones("Dar más días de vacaciones a los empleados\n"));
 
+        System.out.println("El jefe " + jefaFinanzas.dameNombre() +  " tiene un bonus de: " + jefaFinanzas.estableceBonus(500) + "\n");
+
+        System.out.println(misEmpleados[3].dameNombre() + " tiene un bonus de: " + misEmpleados[3].estableceBonus(200) + "\n");
+
         // Empleado directorComercial = new Jefatura("Joana", 23000, 2019, 2, 2); //principio de sustitución 'directorComercial' es de tipo Jefatura que a su vez es un Empleado
 
         // Comparable ejemplo = new Empleado("Pedro", 18000, 2011, 4, 4); //instancia de interfaz de tipo empleado (principio de sustitución)
@@ -62,7 +66,7 @@ public class usoEmpleados {
 }
 
 //class Empleado sin el modificador de acceso ''public'' -> no se debe colocar ya que vamos a crea todas las clases en un mismo fichero.
-class Empleado implements Comparable{
+class Empleado implements Comparable, trabajadores{
 
     private String nombre;
     private double sueldo;
@@ -79,6 +83,11 @@ class Empleado implements Comparable{
     //Segundo constrcutor con parámetros
     public Empleado(String nom){
         this(nom, 30000, 2000, 01, 02); // llamada al constructor de 5 parámetros.
+    }
+
+    //Método de la interfaz trabajadores implementado en la clase empleado
+    public double estableceBonus(double gratificacion){
+        return trabajadores.bonusBase+gratificacion;
     }
 
     //Método getter
@@ -125,8 +134,15 @@ class Empleado implements Comparable{
         super(nom, sue, agno, mes, dia); //llamando al padre y al constructor del padre
     }
     
+    //Método de la Interfaz Jefe
     public String tomarDecisiones(String decision){
         return "Un miembro de la dirección ha tomado la decisión de: " + decision;
+    }
+
+    //Método de la interfaz trabajadores (la interfaz jefe está heredando el método trabajadores, por ende hay que declararlo en la clase jefatura ya que la clase jefatura tiene implementada la interfaz jefes)
+    public double estableceBonus(double gratificacion){
+        double prima = 2000;
+        return trabajadores.bonusBase+gratificacion+prima;
     }
 
     //Método setter
