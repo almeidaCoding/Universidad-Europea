@@ -1,6 +1,6 @@
 package poo;
 
-public class MovimientosBnacarios {
+public class MovimientosBancarios {
     public static void main(String[] args) {
         Movimientos m1 = new Movimientos();
 
