@@ -1,0 +1,69 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilo.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    <title>Media del curso</title>
+</head>
+<body>
+    <section class="container">
+        <div class="glass-container">
+            <!-- onsubmit="return contenedorFunctions()" también sirve como envio del formulario y se debe colocar dentro del form-->
+           <form action="/action_page.php" method="GET"
+            target="_blank">
+
+            <h1>Introduce la nota de las asignaturas</h1>
+            <div>
+                <label>Lenguajes de Marca</label>
+                <input type="texto" name="nota" placeholder="Introduce la nota" id="lenguajesMarca">
+            </div>
+
+            <div>   
+                <label>Entornos de desarrollo</label>
+                <input type="texto" name="nota" placeholder="Introduce la nota" id="entornosDesarrollo">
+            </div>
+            
+            <div>
+                <label>Sistemas informáticos</label>
+                <input type="texto" name="nota" placeholder="Introduce la nota" id="sistemasInformaticos">
+            </div>
+
+            <div>   
+                <label>Base de datos</label>
+                <input type="texto" name="nota" placeholder="Introduce la nota" id="baseDatos">
+            </div>
+
+            <div>
+            	<label>Programación</label>
+                <input type="texto" name="nota" placeholder="Introduce la nota" id="programacion">
+            </div>
+
+            <div class="linea"></div>
+
+            <div>
+            	<label>Nota media</label>
+                <input type="texto" name="nota" id="notaMedia">
+            </div>
+            <div>
+            	<label>Materias suspensas</label>
+                <input type="texto" name="nota" id="materiasSuspendidas">
+            </div>
+            <div>
+            	<label>¿Promociona?</label>
+                <input type="texto" name="nota" id="promociona">
+            </div>
+
+            <div class="button-submit">
+                <input type="button" value="Calcular" onclick="calcularMedia()">
+            </div>
+           </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
